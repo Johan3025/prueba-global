@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication3", "WebApplication3\WebApplication3.csproj", "{89AC2556-F7FE-4B0D-8024-300A90C7085A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{2DBC4CAB-D5BE-464C-9C2A-847806FAC05A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{CADE0425-0A14-4DAF-B205-4BED77E5F9FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBL", "EmployeeBL\EmployeeBL.csproj", "{36C1C647-4C0B-4E9A-8D55-F18D4C9D758F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{3EE3D9F8-A528-4AA4-9D7F-F28A31EC09D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +23,23 @@ Global
 		{89AC2556-F7FE-4B0D-8024-300A90C7085A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89AC2556-F7FE-4B0D-8024-300A90C7085A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89AC2556-F7FE-4B0D-8024-300A90C7085A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C1C647-4C0B-4E9A-8D55-F18D4C9D758F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C1C647-4C0B-4E9A-8D55-F18D4C9D758F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C1C647-4C0B-4E9A-8D55-F18D4C9D758F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C1C647-4C0B-4E9A-8D55-F18D4C9D758F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE3D9F8-A528-4AA4-9D7F-F28A31EC09D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE3D9F8-A528-4AA4-9D7F-F28A31EC09D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE3D9F8-A528-4AA4-9D7F-F28A31EC09D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE3D9F8-A528-4AA4-9D7F-F28A31EC09D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36C1C647-4C0B-4E9A-8D55-F18D4C9D758F} = {CADE0425-0A14-4DAF-B205-4BED77E5F9FA}
+		{3EE3D9F8-A528-4AA4-9D7F-F28A31EC09D4} = {2DBC4CAB-D5BE-464C-9C2A-847806FAC05A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB28D3B9-454E-4E24-B651-1BED1C5C091F}
 	EndGlobalSection
 EndGlobal
