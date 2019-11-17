@@ -15,11 +15,9 @@ namespace EmployeeBL
 
         public IList<Employees> CreateProjectModified()
         {
-            //string baseUrl = "http://masglobaltestapi.azurewebsites.net/api/Employees";
+            string baseUrl = "http://masglobaltestapi.azurewebsites.net/api/Employees";
 
-            string baseUrl = "http://localhost:51320/api/Values?id=2";
             var json = new WebClient().DownloadString(baseUrl);
-
 
             JArray PersonArray = JArray.Parse(json);
 
@@ -35,6 +33,18 @@ namespace EmployeeBL
                 Total= (int)p["Total"]
 
             }).ToList();
+
+            foreach (var registro in persona)
+            {
+                if (registro.contractTypeName == "HourlySalaryEmployee")
+                {
+                    registro.Total = 120 * registro.hourlySalary * 12;
+                }
+                else
+                {
+                    registro.Total = registro.monthlySalary * 12;
+                }
+            }
 
             return persona;
         }
